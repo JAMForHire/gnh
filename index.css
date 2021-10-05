@@ -1,0 +1,25 @@
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.accent {
+  width: 55%;
+  height: 2vh;
+  border-radius: 2.5em;
+  background-color: #0223F7;
+}
+
+img.chevron {
+  width: 4%;
+  cursor: pointer;
+}
