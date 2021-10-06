@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
 }
 
+.verticalLine {
+  border-left: 1px solid gray;
+  height: 85%;
+  filter: blur(2px);
+}
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -81,6 +87,13 @@ div.accent {
 img.chevron {
   width: 4%;
   cursor: pointer;
+}
+
+.horizontal_line {
+  border-top: 1px solid gray;
+  width: 85%;
+  height: 5%;
+  filter: blur(1px);
 }
 
 footer {
