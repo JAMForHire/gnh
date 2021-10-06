@@ -87,7 +87,7 @@ footer {
   background-color: rgb(151, 150, 150);
 }
 
-footer .social-media-img {
+footer .social-media-link {
   margin: 0 5%;
   border-radius: 100%;
 }
@@ -106,7 +106,7 @@ footer p {
     height: 75px;
   }
 
-  footer .social-media-img {
+  footer .social-media-link {
     width: 30px;
     height: 30px;
   }
