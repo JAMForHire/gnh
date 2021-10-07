@@ -136,7 +136,11 @@ footer p {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
+}
+
+.contact-form {
+  height: 80vh;
 }
