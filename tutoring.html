@@ -22,175 +22,62 @@
     </a>
   </nav>
 
-  <div class="container">
-    <div class="row mb-2">
-      <div class="col"></div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Sunday
+  <div class="w-100 h-100 bg-secondary d-flex flex-column align-items-center">
+    <form class="bg-light w-75 h-75 mt-5 p-5">
+      <h1 class="text-center mb-4">Tutoring Signup</h1>
+
+      <div class="input-group mb-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Name:</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter your name">
       </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Monday
+
+      <div class="input-group mb-4">
+        <input type="text" class="form-control" placeholder="Enter your email">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@rpi.edu</span>
+        </div>
       </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Tuesday
+
+      <div class="input-group mb-4">
+        <div class="input-group-append">
+          <label class="input-group-text" for="inputGroupSelect02">Tutor:</label>
+        </div>
+        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+          <option selected>Choose...</option>
+          <option value="1">Tutor 1</option>
+          <option value="2">Tutor 2</option>
+          <option value="3">Tutor 3</option>
+        </select>
       </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Wednesday
+
+      <div class="input-group mb-4">
+        <div class="input-group-append">
+          <label class="input-group-text" for="inputGroupSelect02">Times:</label>
+        </div>
+        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+          <option selected>Choose...</option>
+          <option value="1">5pm-6pm</option>
+          <option value="2">6pm-7pm</option>
+          <option value="3">7pm-8pm</option>
+          <option value="4">8pm-9pm</option>
+        </select>
       </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Thursday
+
+      <div class="input-group mb-5">
+        <div class="input-group-append">
+          <label class="input-group-text" for="inputGroupSelect02">Location:</label>
+        </div>
+        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary" id="inputGroupSelect02">
+          <option selected>Choose...</option>
+          <option value="1">Indoor</option>
+          <option value="2" onclick="getWeather()">Outdoor</option>
+        </select>
       </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Friday
-      </div>
-      <div class="col-sm my-2 border-bottom border-2 text-center">
-        Saturday
-      </div>
-    </div>
 
-    <div class="row mb-2">
-      <div class="col-sm col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">9:00am</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">10:00am</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">11:00am</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-    
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">12:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">1:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">2:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">3:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">4:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">5:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">6:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">7:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">8:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-sm d-flex flex-column justify-content-end align-items-center"><p class="text-right">9:00pm</p></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-      <div class="col-sm my-4 border-bottom border-2"></div>
-    </div>
-    
+      <button type="submit" class="btn btn-primary mt-5">Submit</button>
+    </form>
   </div>
   
   <footer>
