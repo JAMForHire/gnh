@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -7,7 +8,12 @@ html, body {
   padding: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: 0px;
 }
@@ -123,7 +129,14 @@ footer p {
     height: 30px;
   }
 }
-#groupphoto{
+
+#groupphoto {
   width: 100vw;
-  height:60vh;
+  height: 60vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
