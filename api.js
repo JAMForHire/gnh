@@ -26,5 +26,30 @@ function getWeather() {
   xmlhttp.send();
 }
 
+function preventDefault(e) {
+  currName = document.getElementById('name');
+  currEmail = document.getElementById('email');
+  currTutor = document.getElementById('tutor');
+  currLoc = document.getElementById('location');
+
+  if(currName.value !== "" && currEmail.value !== "" && currTutor.value !== "" && currLoc.value !== "") {
+    console.log(currLoc.value);
+    if(currLoc.value === "2") {
+      e = e || window.event;
+      e.preventDefault();
+
+      document.getElementById('temp').textContent = `Temperature: ${weather_obj.temp}`;
+      document.getElementById('weather').textContent = `Weather: ${weather_obj.weather}`;
+
+      document.getElementById('refresh').onclick = () => {
+        location.reload();
+      }
+    }
+  }
+
+  else {
+    alert("Please fill out all of the fields");
+  }
+}
+
 getWeather();
-console.log(weather_obj);
