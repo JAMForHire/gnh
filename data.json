@@ -1,0 +1,34 @@
+{
+  "header": {
+    "home": {
+      "txt": "Home",
+      "href": "index.html"
+    },
+
+    "events": {
+      "txt": "Events",
+      "href": "events.html"
+    },
+
+    "contact": {
+      "txt": "Contact",
+      "href": "contact.html"
+    },
+
+    "tutoring": {
+      "txt": "Tutoring",
+      "href": "tutoring.html"
+    }
+  },
+
+  "footer": {
+    "email1": {
+      "mailto": "mailto:smitha24@rpi.edu",
+      "address": "smitha24@rpi.edu"
+    },
+    "email2": {
+      "mailto": "mailto:gammanueta@rpi.edu",
+      "address": "gammanueta@rpi.edu"
+    }
+  }
+}
