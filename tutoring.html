@@ -7,10 +7,32 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="./index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="./api.js"></script>
   <title>GNH Tutoring</title>
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Outdoor Confirmation</h5>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Current Weather</p>
+          <p id="temp"></p>
+          <p id="weather"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="refresh">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <nav class="topnav" id="topnav">
     <a href="index.html" class="active">Home</a>
@@ -30,11 +52,11 @@
         <div class="input-group-prepend">
           <span class="input-group-text">Name:</span>
         </div>
-        <input type="text" class="form-control" placeholder="Enter your name">
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
       </div>
 
       <div class="input-group mb-4">
-        <input type="text" class="form-control" placeholder="Enter your email">
+        <input type="text" id="email" class="form-control" placeholder="Enter your email">
         <div class="input-group-prepend">
           <span class="input-group-text">@rpi.edu</span>
         </div>
@@ -44,7 +66,7 @@
         <div class="input-group-append">
           <label class="input-group-text" for="inputGroupSelect02">Tutor:</label>
         </div>
-        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+        <select id="tutor" class="custom-select text-left border-secondary border border-1 rounded text-secondary">
           <option selected>Choose...</option>
           <option value="1">Tutor 1</option>
           <option value="2">Tutor 2</option>
@@ -56,8 +78,8 @@
         <div class="input-group-append">
           <label class="input-group-text" for="inputGroupSelect02">Times:</label>
         </div>
-        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary">
-          <option selected>Choose...</option>
+        <select id="time" class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+          <option selected value="">Choose...</option>
           <option value="1">5pm-6pm</option>
           <option value="2">6pm-7pm</option>
           <option value="3">7pm-8pm</option>
@@ -69,14 +91,14 @@
         <div class="input-group-append">
           <label class="input-group-text" for="inputGroupSelect02">Location:</label>
         </div>
-        <select class="custom-select text-left border-secondary border border-1 rounded text-secondary" id="inputGroupSelect02">
-          <option selected>Choose...</option>
+        <select id="location" class="custom-select text-left border-secondary border border-1 rounded text-secondary">
+          <option selected value="">Choose...</option>
           <option value="1">Indoor</option>
-          <option value="2" onclick="getWeather()">Outdoor</option>
+          <option value="2">Outdoor</option>
         </select>
       </div>
 
-      <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      <button type="submit" data-toggle="modal" data-target="#modal" class="btn btn-primary mt-5" onclick="preventDefault()">Submit</button>
     </form>
   </div>
   
