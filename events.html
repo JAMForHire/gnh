@@ -7,16 +7,18 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./header_and_footer.js"></script>
   <script src="./navbar.js"></script>
   <title>GNH Homepage</title>
 </head>
 <body>
 
   <nav class="topnav" id="topnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="tutoring.html">Tutoring</a>
-    <a href="contact.html">Contact</a>
-    <a href="events.html">Events</a>
+    <a id="home"></a>
+    <a id="tutoring"></a>
+    <a id="contact"></a>
+    <a id="events"></a>
     <a href="javascript:void(0);" class="icon" onclick="toggle_nav()">
       <i class="fa fa-bars"></i>
     </a>
@@ -85,8 +87,8 @@
       <!-- Email Addresses -->
       <div class="col-lg-4 d-lg-flex flex-lg-column align-items-end mb-3 text-center text-lg-right">
         <h4 class="display-6">Email</h4>
-        <p class="lead">President: <a href="mailto:smitha24@rpi.edu">smitha24@rpi.edu</a></p>
-        <p class="lead">GNH Mailing List: <a href="mailto:gammanueta@rpi.edu">gammanueta@rpi.edu</a></p>
+        <p class="lead" id="footer_1"></p>
+        <p class="lead" id="footer_2"></p>
       </div>
     </div>
   </footer>
