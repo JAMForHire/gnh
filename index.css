@@ -1,84 +1,112 @@
+/* Html and Body Styling */
 html,
 body {
+  /* Sizing */
   width: 100%;
   min-height: 100vh;
   height: 100%;
 
+  /* Removing any margins */
   margin: 0px;
   padding: 0px;
 
+  /* Page view */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+/* Heading styling */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  /* Removing margins and padding */
   margin: 0px;
   padding: 0px;
 }
 
+/* Navbar Styling */
 .topnav {
+  /* Removing any overflow */
   overflow: hidden;
 }
 
+/* Navbar A Tag Styling for first child */
 .topnav a {
+  /* Move to left */
   float: left;
   display: block;
 
+  /* Text styling */
   color: #000;
   text-align: center;
 
+  /* Sizings */
   padding: 14px 16px;
   font-size: 17px;
 
+  /* No default link styling */
   text-decoration: none;
 }
 
+/* Navbar A Tag Styling for rest of links */
 .topnav a:not(:first-child) {
+  /* Move to right */
   float: right;
 }
 
+/* Verticle Lines */
 .verticalLine {
+  /* Adding verticle lines */
   border-left: 1px solid gray;
   height: 85%;
   filter: blur(2px);
 }
 
+/* Navbar a tag hovering */
 .topnav a:hover {
+  /* Colors */
   background-color: #ddd;
   color: black;
 }
 
+/* Navbar icon */
 .topnav .icon {
+  /* Responsive */
   display: none;
 }
 
+/* Media queries for nav */
 @media screen and (max-width: 600px) {
+  /* Hide links */
   .topnav a:not(:first-child) {
     display: none;
   }
 
+  /* Show icon */
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
+/* Media query for responsive navbar */
 @media screen and (max-width: 600px) {
+  /* Positioning */
   .topnav.responsive {
     position: relative;
   }
 
+  /* Show icon */
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
+  /* Change link style to block style */
   .topnav.responsive a {
     float: none;
     display: block;
@@ -86,79 +114,107 @@ h6 {
   }
 }
 
+/* Underline accent */
 div.accent {
+  /* Sizing */
   width: 55%;
   height: 2vh;
+
+  /* Border */
   border-radius: 2.5em;
+
+  /* Color */
   background-color: #0223F7;
 }
 
+/* Chevron Styling */
 img.chevron {
+  /* Sizing */
   width: 4%;
   cursor: pointer;
 }
 
+/* Horizontal Line Styling */
 .horizontal_line {
+  /* Border */
   border-top: 1px solid gray;
+
+  /* Sizing */
   width: 85%;
   height: 5%;
+
+  /* Blurring */
   filter: blur(1px);
 }
 
+/* Footer background */
 footer {
   background-color: rgb(151, 150, 150);
 }
 
+/* Footer social icons */
 footer .social-media-link {
   margin: 0 5%;
   border-radius: 100%;
 }
 
+/* Footer heading */
 footer h4 {
   padding: 5px 0 10px 0;
 }
 
+/* Footer printing */
 footer p {
   line-height: 10px;
 }
 
+/* Media query for footer */
 @media screen and (max-width: 800px) {
+  /* Shrink image */
   footer .main-img {
     width: 75px;
   }
 
+  /* Change social images size */
   footer .social-media-img {
     width: 30px;
     height: 30px;
   }
 }
 
+/* Group photo default size */
 #groupphoto {
   width: 50vw;
   height: 50vh;
 }
 
+/* Footer styling */
 footer {
   position: relative;
   bottom: 0px;
   width: 100%;
 }
 
+/* Contact form default height */
 .contact-form {
   height: 80vh;
 }
 
+/* Take full height style */
 .h-full {
   min-height: 100%;
   height: min-content;
 }
 
+/* Three column image styling */
 .column_img {
   width: 350px;
   height: 250px;
 }
 
+/* Media query for column images */
 @media only screen and (max-width: 975px) {
+  /* Make percentage styling */
   .column_img {
     width: 50%;
     height: 50%;
