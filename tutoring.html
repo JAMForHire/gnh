@@ -19,15 +19,19 @@
   <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
+      <!-- Maing Modal Content -->
       <div class="modal-content">
         <div class="modal-header">
+          <!-- Heading -->
           <h5 class="modal-title" id="modalTitle">Outdoor Confirmation</h5>
         </div>
+        <!-- Body text -->
         <div class="modal-body">
           <p class="lead">Current Weather</p>
           <p id="temp"></p>
           <p id="weather"></p>
         </div>
+        <!-- Buttons for closing -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" id="refresh">Confirm</button>
@@ -36,6 +40,7 @@
     </div>
   </div>
 
+  <!-- Navbar -->
   <nav class="topnav" id="topnav">
     <a id="home"></a>
     <a id="tutoring"></a>
@@ -46,10 +51,13 @@
     </a>
   </nav>
 
+  <!-- Main content -->
   <div class="w-100 h-100 bg-secondary d-flex flex-column align-items-center">
+    <!-- Centered Form -->
     <form class="bg-light w-75 h-75 mt-5 p-5">
       <h1 class="text-center mb-4 display-4">Tutoring Signup</h1>
 
+      <!-- Name Input -->
       <div class="input-group mb-4">
         <div class="input-group-prepend">
           <span class="input-group-text">Name:</span>
@@ -57,6 +65,7 @@
         <input type="text" id="name" class="form-control" placeholder="Enter your name">
       </div>
 
+      <!-- Email Input -->
       <div class="input-group mb-4">
         <input type="text" id="email" class="form-control" placeholder="Enter your email">
         <div class="input-group-prepend">
@@ -64,6 +73,7 @@
         </div>
       </div>
 
+      <!-- Tutoring Selection -->
       <div class="input-group mb-4">
         <div class="input-group-append">
           <label class="input-group-text" for="tutor">Tutor:</label>
@@ -76,6 +86,7 @@
         </select>
       </div>
 
+      <!-- Time Selection -->
       <div class="input-group mb-4">
         <div class="input-group-append">
           <label class="input-group-text" for="time">Times:</label>
@@ -89,6 +100,7 @@
         </select>
       </div>
 
+      <!-- Location Selection -->
       <div class="input-group mb-5">
         <div class="input-group-append">
           <label class="input-group-text" for="location">Location:</label>
@@ -100,12 +112,14 @@
         </select>
       </div>
 
+      <!-- Submit Button -->
       <div class="d-flex justify-content-end">
         <button type="submit" data-toggle="modal" data-target="#modal" class="btn btn-primary mt-5" onclick="preventDefault()">Submit</button>
       </div>
     </form>
   </div>
   
+  <!-- Footer -->
   <footer>
     <div class="container col-12 d-flex flex-column flex-lg-row align-items-center">
       <!-- ITWS Logo -->
