@@ -10,14 +10,14 @@
       "href": "events.html"
     },
 
-    "contact": {
-      "txt": "Contact",
-      "href": "contact.html"
-    },
-
     "tutoring": {
       "txt": "Tutoring",
       "href": "tutoring.html"
+    },
+
+    "contact": {
+      "txt": "Contact",
+      "href": "contact.html"
     }
   },
 
