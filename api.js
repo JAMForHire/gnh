@@ -43,7 +43,7 @@ function preventDefault(e) {
 
       document.getElementById('refresh').onclick = () => {
         location.reload();
-      }
+      };
     }
   }
 

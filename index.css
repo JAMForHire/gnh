@@ -6,6 +6,9 @@ body {
 
   margin: 0px;
   padding: 0px;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -143,4 +146,21 @@ footer {
 
 .contact-form {
   height: 80vh;
+}
+
+.h-full {
+  min-height: 100%;
+  height: min-content;
+}
+
+.column_img {
+  width: 350px;
+  height: 250px;
+}
+
+@media only screen and (max-width: 975px) {
+  .column_img {
+    width: 50%;
+    height: 50%;
+  }
 }
