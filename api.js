@@ -1,5 +1,5 @@
 const api_key = '412cc56b397f24f503ff44a0e54dd8fe';
-const api_url = `https://api.openweathermap.org/data/2.5/weather?zip=12180&units=imperial&APPID=${api_key}`;
+const api_url = 'https://api.openweathermap.org/data/2.5/weather?zip=12180&units=imperial&APPID='+api_key;
 
 var weather_obj = {};
 
@@ -38,8 +38,8 @@ function preventDefault(e) {
       e = e || window.event;
       e.preventDefault();
 
-      document.getElementById('temp').textContent = `Temperature: ${weather_obj.temp}`;
-      document.getElementById('weather').textContent = `Weather: ${weather_obj.weather}`;
+      document.getElementById('temp').textContent = "Temperature: " + weather_obj.temp;
+      document.getElementById('weather').textContent = "Weather: " + weather_obj.weather;
 
       document.getElementById('refresh').onclick = () => {
         location.reload();
