@@ -51,7 +51,7 @@ function preventDefault(e) {
       e.preventDefault();
 
       // Insert data into modal
-      document.getElementById('temp').textContent = "Temperature: " + weather_obj.temp;
+      document.getElementById('temp').textContent = "Temperature: " + weather_obj.temp + " F";
       document.getElementById('weather').textContent = "Weather: " + weather_obj.weather;
 
       // Onclick handler
